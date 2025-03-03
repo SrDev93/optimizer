@@ -4,7 +4,7 @@
     "type": "library",
     "autoload": {
         "psr-4": {
-            "Srdev93\\Optimizer\\": "src/"
+            "Optimizer\\": "src/"
         }
     },
     "authors": [
@@ -20,7 +20,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Srdev93\\Optimizer\\OptimizerServiceProvider"
+                "Optimizer\\OptimizerServiceProvider"
             ]
         }
     }
