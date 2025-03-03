@@ -3,6 +3,7 @@
 namespace Optimizer;
 
 use Illuminate\Support\ServiceProvider;
+use Optimizer\Console\OptimizerCommand;
 
 class OptimizerServiceProvider extends ServiceProvider
 {
@@ -14,10 +15,8 @@ class OptimizerServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
-        if ($this->app->runningInConsole()) {
-            $this->commands([
-                Console\OptimizerCommand::class,
-            ]);
-        }
+        $this->commands([
+            OptimizerCommand::class,
+        ]);
     }
 }
