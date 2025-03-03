@@ -1,0 +1,25 @@
+{
+    "name": "srdev93/optimizer",
+    "autoload": {
+        "psr-4": {
+            "Srdev93\\Optimizer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sajad Rahmani",
+            "email": "sst.sajad.e@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^10.0|^11.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Optimizer\\OptimizerServiceProvider"
+            ]
+        }
+    }
+}
