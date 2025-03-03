@@ -5,7 +5,7 @@ namespace Optimizer\Http\Controllers;
 use Illuminate\Http\Request;
 use Artisan;
 
-class OptimizerController extends Controller
+class OptimizerController
 {
     public function run(Request $request)
     {
