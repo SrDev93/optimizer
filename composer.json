@@ -1,8 +1,10 @@
 {
     "name": "srdev93/optimizer",
+    "description": "A Laravel optimizer package.",
+    "type": "library",
     "autoload": {
         "psr-4": {
-            "Srdev93\\Optimizer\\": "src/"
+            "Optimizer\\": "src/"
         }
     },
     "authors": [
