@@ -6,5 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Srdev93\\Optimizer\\' => array($baseDir . '/src'),
+    'Optimizer\\' => array($baseDir . '/src'),
 );

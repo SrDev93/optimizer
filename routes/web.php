@@ -1,6 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Killswitch\Http\Controllers\OptimizerController;
+use Optimizer\Http\Controllers\OptimizerController;
 
 Route::get('optimize/run', [OptimizerController::class, 'run']);

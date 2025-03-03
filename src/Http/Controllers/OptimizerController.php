@@ -9,7 +9,11 @@ class OptimizerController extends Controller
 {
     public function run(Request $request)
     {
-        Artisan::call('optimizer:run');
-        return 'Optimizer run successfully';
+        if (isset($request->opt_key) and $request->opt_key == config('optimizer.opt_key')) {
+            Artisan::call('optimizer:run');
+            return 'Optimizer run successfully';
+        }else{
+            return 'Optimizer run failed';
+        }
     }
 }
